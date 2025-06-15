@@ -39,3 +39,74 @@ iframe {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px #ff0000);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #ff0000);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.animate-glow {
+  animation: logoGlow 2s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px #ff0000);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #ff0000);
+  }
+}
+
+.logo-animada {
+  animation: fadeInUp 1.2s ease-out forwards, logoGlow 2.5s ease-in-out infinite;
+  opacity: 0; /* necessário para fade funcionar corretamente */
+}
+
+.bg-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.galeria-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  transform-origin: center;
+}
+
+.galeria-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  filter: brightness(1.2);
+  z-index: 10;
+}
