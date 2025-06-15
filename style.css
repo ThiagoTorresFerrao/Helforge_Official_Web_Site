@@ -31,3 +31,7 @@ iframe {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
 }
+
+.text-soft-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
