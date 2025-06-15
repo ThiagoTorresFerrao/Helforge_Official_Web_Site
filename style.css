@@ -24,8 +24,13 @@ a:hover {
 
 h2, h3 {
   color: #ff4444;
+}
+
+/* Use a classe abaixo onde quiser animar */
+.titulo-animado {
   animation: fadeInUp 1s ease-out;
 }
+
 
 /* ------------------------------ */
 /*         TEXT EFFECTS          */
@@ -169,3 +174,7 @@ nav a:hover::after {
   animation: fadeZoom 1.5s ease-out forwards;
 }
 
+/* Oculta o loading se já tiver sido exibido uma vez */
+.skip-loading #loading-screen {
+  display: none !important;
+}
