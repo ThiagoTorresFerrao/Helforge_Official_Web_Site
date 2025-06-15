@@ -1,0 +1,33 @@
+
+/* Arquivo style.css - personalizações adicionais */
+
+.galeria img {
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h3 {
+  color: #ff4444;
+}
+
+a {
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+}

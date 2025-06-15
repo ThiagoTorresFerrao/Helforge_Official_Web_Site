@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hellforge Official Web Site</title>
+  <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-MdmsKMu0fKmSyc+5og13Frk4c97wL6E5ryYq54uVvY5P0gyrsl4R8cr5Y0hd1wskD2sOrDfIY7Jei+oyjSRv3Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+
+<body class="bg-black text-white bg-cover bg-center" style="background-image: url('./imagens/background.jpg');">
+  <!-- Header com logo e descrição -->
+  <header class="text-center py-10 bg-red-900 bg-opacity-80 bg-cover bg-center" style="background-image: url('imagens/bg_up.jpg');">
+    <!-- LOGO DA BANDA -->
+    <img src="./imagens/hellforge_logo_2021.png" alt="Logo da Banda" class="mx-auto w-[600px] mb-4">
+    
+    <!-- DESCRIÇÃO -->
+    <p class="max-w-2xl mx-auto text-lg">
+      Somos a <strong>Hellforge</strong>, Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum culpa fuga atque, eos explicabo amet vel sunt harum inventore, quasi impedit cumque excepturi necessitatibus dolorum ipsam ut nam accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi magnam, deleniti non saepe, blanditiis excepturi tempora consectetur quaerat inventore necessitatibus consequatur voluptatem aut corrupti ducimus et magni numquam quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, corrupti optio consectetur odit molestias earum dolorum dolorem veritatis, hic quo nobis laboriosam. Reiciendis dolorum cum nulla magni minus id hic.
+    </p>
+  </header>
+
+  <!-- Galeria de imagens -->
+  <section class="flex flex-wrap justify-center gap-4 p-10 bg-black bg-opacity-90">
+    <!-- CAMINHOS DAS IMAGENS -->
+    <img src="imagens/raf.jpg" alt="Foto 1" class="w-72 border-4 border-red-600">
+    <img src="imagens/fel.jpg" alt="Foto 2" class="w-72 border-4 border-red-600">
+    <img src="imagens/thi.jpg" alt="Foto 3" class="w-72 border-4 border-red-600">
+  </section>
+
+  <!-- Seção do clipe -->
+  <section class="text-center py-10 bg-red-800 bg-opacity-90 bg-cover bg-center" style="background-image: url('imagens/bg_down.jpg');">
+    <h2 class="text-2xl font-bold mb-4">Check out our music video</h2>
+    <div class="w-full max-w-xl mx-auto" style="aspect-ratio: 16 / 9;">
+      <iframe
+        src="https://www.youtube.com/embed/PsKkHWNkp3c?list=RDPsKkHWNkp3c" class="w-full h-full" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer com redes sociais -->
+  <footer class="text-center py-6 bg-black bg-opacity-95">
+    <h3 class="text-xl font-semibold mb-4">Follow us</h3>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://www.instagram.com/hellforgeband/" target="_blank" class="flex items-center gap-2 text-red-400 hover:text-white">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+
+      <!--   Deixar está seção em aberto para adicionar no futuro caso sejam criados.
+        <a href="#" class="text-red-400 hover:text-white">Facebook</a>
+        <a href="#" class="text-red-400 hover:text-white">Twitter</a>
+        <a href="#" class="text-red-400 hover:text-white">Integrante 1</a>
+        <a href="#" class="text-red-400 hover:text-white">Integrante 2</a>
+      -->
+    </div>
+    
+    <!-- Créditos e direitos -->
+      <p class="text-sm text-gray-400">
+        Hellforged - Official Website - All Rights Reserved © 2025<br>
+          Website by 
+        <a href="https://www.instagram.com/thiagotorresferrao/" target="_blank" class="text-red-400 hover:text-white">
+    Thiago Torres
+        </a>
+      </p>
+  </footer>
+</body>
+</html>
