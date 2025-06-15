@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria de Fotos - Hellforged</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      background-image: url('./imagens/background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    /* Estilo para a galeria miniatura */
+    .gallery-thumb {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .gallery-thumb:hover,
+    .gallery-thumb.active {
+      border-color: #e11d48; /* vermelho */
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .lightbox.active {
+      display: flex;
+    }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 80vh;
+      border: 4px solid #e11d48;
+      box-shadow: 0 0 20px #e11d48;
+      border-radius: 8px;
+    }
+    .lightbox button {
+      position: absolute;
+      top: 50%;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 2.5rem;
+      cursor: pointer;
+      user-select: none;
+      transform: translateY(-50%);
+      padding: 0 15px;
+      transition: color 0.3s;
+    }
+    .lightbox button:hover {
+      color: #e11d48;
+    }
+    .lightbox .prev {
+      left: 20px;
+    }
+    .lightbox .next {
+      right: 20px;
+    }
+    .lightbox .close {
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      transform: none;
+    }
+
+    header, footer {
+      background-color: rgba(139, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem 0;
+    }
+    a.nav-link {
+      color: #f87171;
+      margin: 0 15px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a.nav-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="galeria.html" class="nav-link">Galeria de Fotos</a>
+      <a href="tour.html" class="nav-link">Tour Date</a>
+      <a href="contato.html" class="nav-link">Contato</a>
+    </nav>
+    <h1 class="text-white font-bold text-3xl mt-2">Galeria de Fotos Hellforged</h1>
+  </header>
+
+  <main class="p-6 flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
+    <!-- Miniaturas -->
+    <img src="imagens/raf.jpg" alt="Foto 1" class="gallery-thumb" data-index="0" />
+    <img src="imagens/fel.jpg" alt="Foto 2" class="gallery-thumb" data-index="1" />
+    <img src="imagens/thi.jpg" alt="Foto 3" class="gallery-thumb" data-index="2" />
+    <!-- Adicione mais imagens aqui -->
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="closeBtn" aria-label="Fechar">&times;</button>
+    <button class="prev" id="prevBtn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="Imagem ampliada" id="lightboxImg" />
+    <button class="next" id="nextBtn" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <footer class="text-gray-400 text-sm mt-10">
+    Hellforged - Official Website - All Rights Reserved © 2025
+  </footer>
+
+  <script>
+    const images = [
+      'imagens/raf.jpg',
+      'imagens/fel.jpg',
+      'imagens/thi.jpg',
+      // Adicione mais caminhos de imagens aqui conforme necessário
+    ];
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.getElementById('closeBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const thumbs = document.querySelectorAll('.gallery-thumb');
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+      currentIndex = index;
+      lightboxImg.src = images[currentIndex];
+      lightbox.classList.add('active');
+      updateActiveThumb();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      lightboxImg.src = images[currentIndex];
+      updateActiveThumb();
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % images.length;
+      lightboxImg.src = images[currentIndex];
+      updateActiveThumb();
+    }
+
+    function updateActiveThumb() {
+      thumbs.forEach((thumb, idx) => {
+        if (idx === currentIndex) {
+          thumb.classList.add('active');
+        } else {
+          thumb.classList.remove('active');
+        }
+      });
+    }
+
+    thumbs.forEach((thumb, idx) => {
+      thumb.addEventListener('click', () => openLightbox(idx));
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', showPrev);
+    nextBtn.addEventListener('click', showNext);
+
+    // Fechar lightbox ao clicar fora da imagem
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // Fechar com ESC
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -18,26 +18,48 @@
 
 
 <body class="bg-black text-white bg-cover bg-center" style="background-image: url('./imagens/background.jpg');">
+
+  <!-- NAVBAR FIXA -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+
+    <!-- LOGO à esquerda -->
+    <a href="index.html" class="flex items-center ml-16">
+      <img src="./imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto">
+    </a>
+
+    <!-- LINKS agrupados à direita -->
+    <div class="flex space-x-6 items-center pr-20">
+      <a onclick="scrollToTop()" class="cursor-pointer text-red-400 hover:text-white font-semibold transition">Início</a>
+      <a href="galeria.html" class="text-red-400 hover:text-white font-semibold transition">Galeria de Fotos</a>
+      <a href="tour.html" class="text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
+      <a href="contato.html" class="text-red-400 hover:text-white font-semibold transition">Contato</a>
+    </div>
+
+  </div>
+</nav>
+
+
   <!-- Header com logo e descrição -->
-  <header class="text-center py-10 bg-red-900 bg-opacity-80 bg-cover bg-center" style="background-image: url('imagens/bg_up.jpg');">
+  <header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center" style="background-image: url('imagens/bg_up.jpg');">
     <!-- LOGO DA BANDA -->
     <img src="./imagens/hellforge_logo_2021.png" alt="Logo da Banda" class="mx-auto w-[600px] mb-4">
     
     <!-- DESCRIÇÃO -->
 <div class="max-w-5xl mx-auto text-lg leading-relaxed px-6 text-justify space-y-6 text-soft-shadow">
-  <p><strong>Hellforged</strong>: Forged in the Fire of True Power Metal</p>
+  <p><strong>Hellforge</strong>: Forged in the Fire of True Power Metal</p>
 
-  <p>Hellforged was born in June 2010 in Salvador, Brazil, founded by musicians Thiago Torres and Felipe Casais after the breakup of their previous band, Dryad. Joined by the skilled guitarist Rafael Carvalho, the band began to take its first steps into the local underground metal scene with determination and passion.</p>
+  <p>Hellforge was born in June 2010 in Salvador, Brazil, founded by musicians Thiago Torres and Felipe Casais after the breakup of their previous band, Dryad. Joined by the skilled singer Rafael Carvalho, the band began to take its first steps into the local underground metal scene with determination and passion.</p>
 
-  <p>From its inception, Hellforged set out with a clear mission: to deliver powerful, technical, and intense Power Metal, honoring the classic roots of the genre while infusing it with a modern edge. Their biggest musical influences include legendary bands such as Angra, Blind Guardian, and Iced Earth, whose spirit resonates throughout Hellforged's sound and performance.</p>
+  <p>From its inception, Hellforge set out with a clear mission: to deliver powerful, technical, and intense Power Metal, honoring the classic roots of the genre while infusing it with a modern edge. Their biggest musical influences include legendary bands such as Angra, Blind Guardian, and Iced Earth, whose spirit resonates throughout Hellforge's sound and performance.</p>
 
   <p>After a period away from the spotlight, the band is now preparing for a bold return, bringing a refreshed lineup and a more mature and impactful sound. The addition of Danilo Brandão (keyboards) and Luan (drums) has brought new energy and creativity to the project, further expanding the band’s musical capabilities and stage presence.</p>
 
-  <p>Hellforged’s current setlist is packed with exclusive and powerful original songs, showcasing the best of Power Metal through epic melodies, heavy riffs, and emotionally charged lyrics. Each track is carefully crafted to transport the listener through mythical worlds and intense soundscapes — a true journey through sound and steel.</p>
+  <p>Hellforged's current setlist is packed with exclusive and powerful original songs, showcasing the best of Power Metal through epic melodies, heavy riffs, and emotionally charged lyrics. Each track is carefully crafted to transport the listener through mythical worlds and intense soundscapes — a true journey through sound and steel.</p>
 
   <p>Rising as a response to the lack of Power Metal representation in the Bahia metal scene, Hellforged stands tall as one of the few bands in the region truly embracing and championing the genre. With strength, precision, and relentless passion, they are ready to reignite the flame and conquer stages wherever their music takes them.</p>
 
-  <p>Hellforged is more than a band — it is a statement of pure devotion to heavy metal. A blazing force returning to deliver everything Power Metal fans crave: heaviness, melody, and epic spirit.</p>
+  <p>Hellforge is more than a band — it is a statement of pure devotion to heavy metal. A blazing force returning to deliver everything Power Metal fans crave: heaviness, melody, and epic spirit.</p>
 </div>
   </header>
 
@@ -84,5 +106,6 @@
         </a>
       </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
