@@ -1,22 +1,13 @@
-
-/* Arquivo style.css - personalizações adicionais */
-
-.galeria img {
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.galeria img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
-}
+/* ------------------------------ */
+/*        GLOBAL STYLES         */
+/* ------------------------------ */
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2, h3 {
-  color: #ff4444;
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -27,76 +18,35 @@ a:hover {
   color: #ffffff;
 }
 
-iframe {
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+/* ------------------------------ */
+/*           HEADINGS            */
+/* ------------------------------ */
+
+h2, h3 {
+  color: #ff4444;
+  animation: fadeInUp 1s ease-out;
 }
+
+/* ------------------------------ */
+/*         TEXT EFFECTS          */
+/* ------------------------------ */
 
 .text-soft-shadow {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-html {
-  scroll-behavior: smooth;
+/* ------------------------------ */
+/*         IMAGE GALLERY         */
+/* ------------------------------ */
+
+.galeria img {
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes logoGlow {
-  0%, 100% {
-    filter: drop-shadow(0 0 3px #ff0000);
-  }
-  50% {
-    filter: drop-shadow(0 0 10px #ff0000);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 1.2s ease-out forwards;
-}
-
-.animate-glow {
-  animation: logoGlow 2s ease-in-out infinite;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes logoGlow {
-  0%, 100% {
-    filter: drop-shadow(0 0 3px #ff0000);
-  }
-  50% {
-    filter: drop-shadow(0 0 10px #ff0000);
-  }
-}
-
-.logo-animada {
-  animation: fadeInUp 1.2s ease-out forwards, logoGlow 2.5s ease-in-out infinite;
-  opacity: 0; /* necessário para fade funcionar corretamente */
-}
-
-.bg-parallax {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
 }
 
 .galeria-hover {
@@ -110,3 +60,112 @@ html {
   filter: brightness(1.2);
   z-index: 10;
 }
+
+/* ------------------------------ */
+/*            IFRAME             */
+/* ------------------------------ */
+
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+}
+
+/* ------------------------------ */
+/*          LOADING SCREEN       */
+/* ------------------------------ */
+
+#loading-screen {
+  transition: opacity 0.8s ease;
+}
+
+/* ------------------------------ */
+/*         LOGO ANIMATION        */
+/* ------------------------------ */
+
+.logo-animada {
+  animation: fadeInUp 1.2s ease-out forwards, logoGlow 2.5s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* ------------------------------ */
+/*        PARALLAX BACKGROUND    */
+/* ------------------------------ */
+
+.bg-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------------------------ */
+/*        NAVBAR ENHANCEMENTS    */
+/* ------------------------------ */
+
+nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #ff4444;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ------------------------------ */
+/*          ANIMATIONS           */
+/* ------------------------------ */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 3px #ff0000);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #ff0000);
+  }
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.animate-glow {
+  animation: logoGlow 2s ease-in-out infinite;
+}
+
+.animate-fade-zoom {
+  animation: fadeZoom 1.5s ease-out forwards;
+}
+

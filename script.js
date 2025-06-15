@@ -1,4 +1,3 @@
-
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -22,4 +21,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 300); // duração da animação em ms
     }
   });
+});
+
+window.addEventListener("load", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+  const entradaSom = document.getElementById("entrada-som");
+
+  if (entradaSom) {
+    entradaSom.volume = 0.2;
+
+    entradaSom.play().catch((err) => {
+      console.log("Som bloqueado, aguardando interação:", err);
+      document.addEventListener("click", () => {
+        entradaSom.play();
+      }, { once: true });
+    });
+  }
+
+  if (loadingScreen) {
+    setTimeout(() => {
+      loadingScreen.style.transition = "opacity 0.8s ease";
+      loadingScreen.style.opacity = 0;
+      setTimeout(() => loadingScreen.remove(), 800);
+    }, 2000);
+  }
 });
