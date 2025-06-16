@@ -12,19 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Função para abrir o menu com animação
   function openMenu() {
     menu.classList.remove("hidden");
-    // Remove classes que deixam invisível e pequeno
     menu.classList.remove("opacity-0", "scale-95");
-    // Adiciona classes que deixam visível e no tamanho normal
     menu.classList.add("opacity-100", "scale-100");
   }
 
   // Função para fechar o menu com animação
   function closeMenu() {
-    // Remove classes de visibilidade total
     menu.classList.remove("opacity-100", "scale-100");
-    // Adiciona classes de invisibilidade e tamanho reduzido
     menu.classList.add("opacity-0", "scale-95");
-    // Após animação (300ms), oculta o menu
     setTimeout(() => {
       menu.classList.add("hidden");
     }, 300);
@@ -46,7 +41,6 @@ window.addEventListener("load", () => {
 
   if (!loadingScreen) return;
 
-  // Se é a primeira visita, mostra loading com som
   if (!jaViuLoading) {
     if (entradaSom) {
       entradaSom.volume = 0.2;
@@ -62,12 +56,13 @@ window.addEventListener("load", () => {
       setTimeout(() => {
         loadingScreen.remove();
       }, 800);
-    }, 2000); // duração do loading visível
+    }, 2000);
 
     localStorage.setItem("hellforge-loaded", "true");
   } else {
-    // Se já viu o loading antes, remove instantaneamente
     loadingScreen.remove();
   }
 });
+
+
 

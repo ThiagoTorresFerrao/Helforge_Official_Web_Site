@@ -1,5 +1,5 @@
 /* ------------------------------ */
-/*        GLOBAL STYLES         */
+/*        GLOBAL STYLES           */
 /* ------------------------------ */
 
 body {
@@ -19,7 +19,7 @@ a:hover {
 }
 
 /* ------------------------------ */
-/*           HEADINGS            */
+/*           HEADINGS             */
 /* ------------------------------ */
 
 h2, h3 {
@@ -31,9 +31,8 @@ h2, h3 {
   animation: fadeInUp 1s ease-out;
 }
 
-
 /* ------------------------------ */
-/*         TEXT EFFECTS          */
+/*         TEXT EFFECTS           */
 /* ------------------------------ */
 
 .text-soft-shadow {
@@ -41,7 +40,7 @@ h2, h3 {
 }
 
 /* ------------------------------ */
-/*         IMAGE GALLERY         */
+/*         IMAGE GALLERY          */
 /* ------------------------------ */
 
 .galeria img {
@@ -67,7 +66,7 @@ h2, h3 {
 }
 
 /* ------------------------------ */
-/*            IFRAME             */
+/*            IFRAME              */
 /* ------------------------------ */
 
 iframe {
@@ -76,15 +75,26 @@ iframe {
 }
 
 /* ------------------------------ */
-/*          LOADING SCREEN       */
+/*          LOADING SCREEN        */
 /* ------------------------------ */
 
 #loading-screen {
   transition: opacity 0.8s ease;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loading-screen img {
+  opacity: 0;
+  transform: scale(0.75);
+  animation: fadeZoom 1.5s ease-out forwards;
 }
 
 /* ------------------------------ */
-/*         LOGO ANIMATION        */
+/*         LOGO ANIMATION         */
 /* ------------------------------ */
 
 .logo-animada {
@@ -93,7 +103,7 @@ iframe {
 }
 
 /* ------------------------------ */
-/*        PARALLAX BACKGROUND    */
+/*        PARALLAX BACKGROUND     */
 /* ------------------------------ */
 
 .bg-parallax {
@@ -103,7 +113,7 @@ iframe {
 }
 
 /* ------------------------------ */
-/*        NAVBAR ENHANCEMENTS    */
+/*        NAVBAR ENHANCEMENTS     */
 /* ------------------------------ */
 
 nav a {
@@ -128,7 +138,7 @@ nav a:hover::after {
 }
 
 /* ------------------------------ */
-/*          ANIMATIONS           */
+/*          ANIMATIONS            */
 /* ------------------------------ */
 
 @keyframes fadeInUp {
@@ -154,11 +164,11 @@ nav a:hover::after {
 @keyframes fadeZoom {
   0% {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.75);
   }
   100% {
     opacity: 1;
-    transform: scale(2);
+    transform: scale(1);
   }
 }
 
@@ -178,3 +188,4 @@ nav a:hover::after {
 .skip-loading #loading-screen {
   display: none !important;
 }
+
