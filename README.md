@@ -1,25 +1,30 @@
 # Helforge_Official_Web_Site
 Helforge_Official_Web_Site
 
-[Hellforge Official Web Site - Click here](https://thiagotorresferrao.github.io/Portifolio/)
+[Hellforge Official Web Site - Click here](https://thiagotorresferrao.github.io/Helforge_Official_Web_Site/)
 
 *** incomplete, work in progress ***
 
 EN-US
 
-Hellforge: Forged in the Fire of True Power Metal
+Hellforged Band Official Website – Professional Project with Tailwind CSS
 
-Hellforge was born in June 2010 in Salvador, Brazil, founded by musicians Thiago Torres and Felipe Casais after the breakup of their previous band, Dryad. Joined by the skilled guitarist Rafael Carvalho, the band began to take its first steps into the local underground metal scene with determination and passion.
+This is a complete website developed for the heavy metal band Hellforged, built using HTML, Tailwind CSS, and JavaScript as core technologies. The main focus was to deliver a bold, modern, and responsive experience aligned with the band's identity and energy.
+Features and Highlights:
 
-From its inception, Hellforge set out with a clear mission: to deliver powerful, technical, and intense Power Metal, honoring the classic roots of the genre while infusing it with a modern edge. Their biggest musical influences include legendary bands such as Angra, Blind Guardian, and Iced Earth, whose spirit resonates throughout Hellforge's sound and performance.
+    Animated loading screen with custom soundtrack;
 
-After a period away from the spotlight, the band is now preparing for a bold return, bringing a refreshed lineup and a more mature and impactful sound. The addition of Danilo Brandão (keyboards) and Luan (drums) has brought new energy and creativity to the project, further expanding the band’s musical capabilities and stage presence.
+    Fully responsive layout for mobile, tablet, and desktop devices;
 
-Hellforged’s current setlist is packed with exclusive and powerful original songs, showcasing the best of Power Metal through epic melodies, heavy riffs, and emotionally charged lyrics. Each track is carefully crafted to transport the listener through mythical worlds and intense soundscapes — a true journey through sound and steel.
+    Dedicated sections such as Tour Dates, Discography, Photo Gallery, Contact, and social media links;
 
-Rising as a response to the lack of Power Metal representation in the Bahia metal scene, Hellforge stands tall as one of the few bands in the region truly embracing and championing the genre. With strength, precision, and relentless passion, they are ready to reignite the flame and conquer stages wherever their music takes them.
+    Integration of visual effects and animations for an immersive navigation;
 
-Hellforge is more than a band — it is a statement of pure devotion to heavy metal. A blazing force returning to deliver everything Power Metal fans crave: heaviness, melody, and epic spirit.
+    Design inspired by the metal aesthetic, featuring dark tones, custom typography, and striking visual elements;
+
+    Performance-optimized and lightweight using Tailwind CSS utility-first framework.
+
+This project demonstrates my ability to build professional-grade websites tailored to a target audience, with a strong focus on design, performance, and interactivity. While it serves as a portfolio example, it has the potential to be used in a real-world scenario.
 
 
 -
@@ -27,19 +32,24 @@ Hellforge is more than a band — it is a statement of pure devotion to heavy me
 
 PT-BR
 
-Hellforge: Forjada no fogo do verdadeiro Power Metal
+Site Oficial da Banda Hellforged – Projeto Profissional com Tailwind CSS
 
-A banda Hellforge nasceu em junho de 2010, na cidade de Salvador/BA, idealizada pelos músicos Thiago Torres e Felipe Casais, logo após o encerramento das atividades da antiga banda Dryad. Unindo forças ao talentoso guitarrista Rafael Carvalho, a formação começou a tomar forma e dar os primeiros passos no cenário underground soteropolitano.
+Este projeto é um site completo desenvolvido para a banda de heavy metal Hellforged, utilizando HTML, Tailwind CSS e JavaScript como principais tecnologias. O foco principal foi oferecer uma experiência visual intensa, moderna e responsiva, alinhada com a identidade e a energia da banda.
+Funcionalidades e Destaques:
 
-Desde o início, a proposta artística da Hellforge foi clara: executar um Power Metal vigoroso, técnico e pesado, resgatando a essência épica e melódica do gênero com uma pegada moderna e energética. Suas principais influências vêm de verdadeiros pilares do estilo como Angra, Blind Guardian e Iced Earth, que moldaram não apenas o som, mas também a atitude da banda no palco e em estúdio.
+    Tela de loading animada com trilha sonora personalizada;
 
-Após um período afastada do cenário musical, a Hellforge retorna com força total, agora com uma nova formação e uma sonoridade ainda mais madura e impactante. Os músicos Danilo Brandão (teclado) e Luan (bateria) se juntaram à banda, trazendo novas ideias e ampliando o potencial criativo do grupo. Com essa renovação, a banda se prepara para marcar seu nome definitivamente na história do metal nacional.
+    Layout responsivo adaptado para dispositivos móveis, tablets e desktops;
 
-O setlist atual da Hellforge é extenso e poderoso, composto por músicas autorais inéditas e exclusivas, que entregam o melhor do power metal com peso, melodia e letras marcantes. Cada composição é forjada com cuidado, trazendo histórias épicas, atmosferas grandiosas e arranjos que fazem jus aos grandes nomes do gênero.
+    Sessões dedicadas como Tour Dates, Discografia, Galeria de Fotos, Contato e redes sociais;
 
-A Hellforge surge como uma resposta à carência de bandas de power metal no cenário baiano, se consolidando como uma das poucas representantes do estilo na região. Com garra, técnica e paixão, a banda está pronta para levar sua música aos palcos e conquistar cada vez mais fãs por onde passar.
+    Integração de efeitos visuais e animações para uma navegação mais imersiva;
 
-Hellforge não é apenas uma banda — é uma declaração de amor ao metal. Uma força bruta que retorna para incendiar os palcos com tudo aquilo que os fãs mais fiéis do gênero amam: peso, melodia e épico.
+    Design inspirado no universo do metal, com cores escuras, tipografia personalizada e elementos visuais marcantes;
+
+    Otimização de performance e carregamento leve utilizando a estrutura utilitária do Tailwind CSS.
+
+Este projeto demonstra minha capacidade de desenvolver sites profissionais voltados ao público-alvo, com foco em design, performance e interatividade. Trata-se de uma amostra de portfólio, mas com potencial real de ser utilizado em produção.
 
 [Instagram](https://www.instagram.com/hellforgeband/)
 
