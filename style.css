@@ -189,3 +189,64 @@ nav a:hover::after {
   display: none !important;
 }
 
+
+/* ------------------------------ */
+/*      QR CODE AND WHATS APP     */
+/* ------------------------------ */
+
+
+.whatsapp-contact {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.qr__wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr__code {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.qr__code:hover {
+  transform: scale(1.05);
+}
+
+.qr__text {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.whatsapp__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ff4444;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp__button:hover {
+  background-color: #7a1919;
+  transform: translateY(-2px);
+}
+
+#contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
