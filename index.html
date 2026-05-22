@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hellforge Official Web Site</title>
-  <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/imagens/favicon.ico" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="assets/styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
-<body class="bg-black text-white bg-cover bg-center" style="background-image: url('./imagens/background.jpg');">
+<body class="bg-black text-white bg-cover bg-center" style="background-image: url('assets/imagens/bg_up.jpg');">
 
 <script>
   // Se o usuário já viu o loading, adiciona uma classe para ocultá-lo
@@ -21,7 +21,7 @@
 
 <!-- Tela de Loading com som -->
 <div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50 flex-col">
-  <img src="./imagens/hellforge_logo_2021.png" alt="Logo Hellforged"
+  <img src="assets/imagens/hellforge_logo_2021.png" alt="Logo Hellforged"
        class="w-72 opacity-0 scale-75 animate-fade-zoom" />
   <audio id="entrada-som" src="audio/entrada.mp3" preload="auto"></audio>
 </div>
@@ -32,7 +32,7 @@
 
     <!-- LOGO -->
     <a href="index.html" class="flex items-center ml-4">
-      <img src="./imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto">
+      <img src="assets/imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto">
     </a>
 
     <!-- BOTÃO HAMBURGUER (visível no mobile) -->
@@ -56,9 +56,9 @@
 </nav>
 
 <!-- Header com logo e descrição -->
-<header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center bg-parallax" style="background-image: url('imagens/bg_up.jpg');">
+<header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center bg-parallax" style="background-image: url('assets/imagens/bg_up.jpg');">
   <!-- LOGO DA BANDA COM ANIMAÇÃO -->
-  <img src="./imagens/hellforge_logo_2021.png"
+  <img src="assets/imagens/hellforge_logo_2021.png"
        alt="Logo da Banda"
        class="mx-auto w-[600px] mb-4 logo-animada">
 
@@ -82,13 +82,13 @@
 
 <!-- Galeria de imagens -->
 <section class="flex flex-wrap justify-center gap-4 p-10 bg-black bg-opacity-90">
-  <img src="imagens/raf.jpg" alt="Foto 1" class="w-72 border-4 border-red-600 galeria-hover">
-  <img src="imagens/fel.jpg" alt="Foto 2" class="w-72 border-4 border-red-600 galeria-hover">
-  <img src="imagens/thi.jpg" alt="Foto 3" class="w-72 border-4 border-red-600 galeria-hover">
+  <img src="assets/imagens/raf.jpg" alt="Foto 1" class="w-72 border-4 border-red-600 galeria-hover">
+  <img src="assets/imagens/fel.jpg" alt="Foto 2" class="w-72 border-4 border-red-600 galeria-hover">
+  <img src="assets/imagens/thi.jpg" alt="Foto 3" class="w-72 border-4 border-red-600 galeria-hover">
 </section>
 
 <!-- Seção do clipe -->
-<section class="text-center py-10 bg-red-800 bg-opacity-90 bg-cover bg-center" style="background-image: url('imagens/bg_down.jpg');">
+<section class="text-center py-10 bg-red-800 bg-opacity-90 bg-cover bg-center" style="background-image: url('assets/imagens/bg_down.jpg');">
   <h2 class="text-2xl font-bold mb-4">Check out our music video</h2>
   <div class="w-full max-w-xl mx-auto" style="aspect-ratio: 16 / 9;">
     <iframe
@@ -116,7 +116,7 @@
   </p>
 </footer>
 
-<script src="script.js"></script>
+<script src="assets/scripts/script.js"></script>
 </body>
 </html>
 
