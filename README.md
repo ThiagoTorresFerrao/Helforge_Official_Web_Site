@@ -1,57 +1,121 @@
+# Hellforge Official Website
 
-# Helforge_Official_Web_Site
-Helforge_Official_Web_Site
+Official website project developed for the heavy metal band Hellforged.
 
-[Hellforge Official Web Site - Click here](https://thiagotorresferrao.github.io/Helforge_Official_Web_Site/)
+🔗 [Access the Website](https://thiagotorresferrao.github.io/Helforge_Official_Web_Site/)
 
-*** incomplete, work in progress ***
+---
 
-EN-US
+# 📁 Project Structure
 
-Hellforged Band Official Website – Professional Project with Tailwind CSS
+```plaintext
+HELLFORGE_OFFICIAL_WEB_SITE
+│
+├── assets
+│   ├── audio
+│   ├── imagens
+│   ├── scripts
+│   └── styles
+│
+├── contato.html
+├── galeria.html
+├── index.html
+├── page_not_found.html
+├── README.md
+├── teste.html
+└── tour.html
+```
 
-This is a complete website developed for the heavy metal band Hellforged, built using HTML, Tailwind CSS, and JavaScript as core technologies. The main focus was to deliver a bold, modern, and responsive experience aligned with the band's identity and energy.
-Features and Highlights:
+---
 
-    Animated loading screen with custom soundtrack;
+# 🚧 Status
 
-    Fully responsive layout for mobile, tablet, and desktop devices;
+> Project currently under development — work in progress.
 
-    Dedicated sections such as Tour Dates, Discography, Photo Gallery, Contact, and social media links;
+---
 
-    Integration of visual effects and animations for an immersive navigation;
+# 🇺🇸 EN-US
 
-    Design inspired by the metal aesthetic, featuring dark tones, custom typography, and striking visual elements;
+## Hellforged Official Website
 
-    Performance-optimized and lightweight using Tailwind CSS utility-first framework.
+This project is a complete website developed for the heavy metal band **Hellforged**, using:
 
-This project demonstrates my ability to build professional-grade websites tailored to a target audience, with a strong focus on design, performance, and interactivity. While it serves as a portfolio example, it has the potential to be used in a real-world scenario.
+- HTML5
+- Tailwind CSS
+- JavaScript
 
+The main goal was to create a bold, immersive, modern, and fully responsive experience that reflects the band's identity and energy.
 
--
+## ✨ Features
 
+- Animated loading screen with custom soundtrack
+- Fully responsive layout for desktop, tablet, and mobile devices
+- Dedicated pages for:
+  - Tour Dates
+  - Photo Gallery
+  - Contact
+  - Social Media
+- Interactive animations and visual effects
+- Dark metal-inspired aesthetic design
+- Optimized performance using Tailwind CSS utility-first framework
+- Lightweight and organized project structure
 
-PT-BR
+## 🎯 Purpose
 
-Site Oficial da Banda Hellforged – Projeto Profissional com Tailwind CSS
+This project demonstrates my ability to develop professional and visually immersive websites focused on:
 
-Este projeto é um site completo desenvolvido para a banda de heavy metal Hellforged, utilizando HTML, Tailwind CSS e JavaScript como principais tecnologias. O foco principal foi oferecer uma experiência visual intensa, moderna e responsiva, alinhada com a identidade e a energia da banda.
-Funcionalidades e Destaques:
+- Performance
+- Responsiveness
+- UI/UX
+- Visual identity
+- Front-end organization and scalability
 
-    Tela de loading animada com trilha sonora personalizada;
+Although it is part of my portfolio, the project was designed with real-world production standards in mind.
 
-    Layout responsivo adaptado para dispositivos móveis, tablets e desktops;
+---
 
-    Sessões dedicadas como Tour Dates, Discografia, Galeria de Fotos, Contato e redes sociais;
+# 🇧🇷 PT-BR
 
-    Integração de efeitos visuais e animações para uma navegação mais imersiva;
+## Site Oficial da Banda Hellforged
 
-    Design inspirado no universo do metal, com cores escuras, tipografia personalizada e elementos visuais marcantes;
+Este projeto é um site completo desenvolvido para a banda de heavy metal **Hellforged**, utilizando:
 
-    Otimização de performance e carregamento leve utilizando a estrutura utilitária do Tailwind CSS.
+- HTML5
+- Tailwind CSS
+- JavaScript
 
-Este projeto demonstra minha capacidade de desenvolver sites profissionais voltados ao público-alvo, com foco em design, performance e interatividade. Trata-se de uma amostra de portfólio, mas com potencial real de ser utilizado em produção.
+O principal objetivo foi criar uma experiência visual intensa, moderna, imersiva e totalmente responsiva, alinhada com a identidade e a energia da banda.
 
-[Instagram](https://www.instagram.com/hellforgeband/)
+## ✨ Funcionalidades
 
-[YouTube](https://www.youtube.com/@Thiago_Torres)
+- Tela de loading animada com trilha sonora personalizada
+- Layout totalmente responsivo para desktop, tablet e dispositivos móveis
+- Páginas dedicadas para:
+  - Datas de shows
+  - Galeria de fotos
+  - Contato
+  - Redes sociais
+- Efeitos visuais e animações interativas
+- Design inspirado na estética do heavy metal
+- Performance otimizada utilizando Tailwind CSS
+- Estrutura organizada e escalável
+
+## 🎯 Objetivo
+
+Este projeto demonstra minha capacidade de desenvolver sites profissionais com foco em:
+
+- Performance
+- Responsividade
+- UI/UX
+- Identidade visual
+- Organização e escalabilidade front-end
+
+Apesar de fazer parte do meu portfólio, o projeto foi pensado seguindo padrões reais de produção.
+
+---
+
+# 🌐 Social Media
+
+[![Instagram](https://img.shields.io/badge/Instagram-hellforgeband-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hellforgeband/)
+
+[![YouTube](https://img.shields.io/badge/YouTube-Thiago__Torres-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Thiago_Torres)
