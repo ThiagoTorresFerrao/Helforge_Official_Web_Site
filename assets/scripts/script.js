@@ -1,3 +1,11 @@
+// =========================
+// SKIP LOADING SCREEN
+// =========================
+
+if (localStorage.getItem("hellforge-loaded")) {
+    document.documentElement.classList.add("skip-loading");
+}
+
 // Função para rolar suavemente até o topo da página
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
