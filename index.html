@@ -12,111 +12,111 @@
 
 <body class="bg-black text-white bg-cover bg-center" style="background-image: url('assets/imagens/bg_up.jpg');">
 
-<script>
-  // Se o usuário já viu o loading, adiciona uma classe para ocultá-lo
-  if (localStorage.getItem("hellforge-loaded")) {
-    document.documentElement.classList.add("skip-loading");
-  }
-</script>
+  <script>
+    // Se o usuário já viu o loading, adiciona uma classe para ocultá-lo
+    if (localStorage.getItem("hellforge-loaded")) {
+      document.documentElement.classList.add("skip-loading");
+    }
+  </script>
 
-<!-- Tela de Loading com som -->
-<div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50 flex-col">
-  <img src="assets/imagens/hellforge_logo_2021.png" alt="Logo Hellforged"
-       class="w-72 opacity-0 scale-75 animate-fade-zoom" />
-  <audio id="entrada-som" src="audio/entrada.mp3" preload="auto"></audio>
-</div>
-  
-<!-- NAVBAR FIXA -->
-<nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+  <!-- Tela de Loading com som -->
+  <div id="loading-screen" class="fixed inset-0 bg-black flex items-center justify-center z-50 flex-col">
+    <img src="assets/imagens/hellforge_logo_2021.png" alt="Logo Hellforged"
+        class="w-72 opacity-0 scale-75 animate-fade-zoom" />
+    <audio id="entrada-som" src="audio/entrada.mp3" preload="auto"></audio>
+  </div>
+    
+  <!-- NAVBAR FIXA -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
 
-    <!-- LOGO -->
-    <a href="index.html" class="flex items-center ml-4">
-      <img src="assets/imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto">
-    </a>
+      <!-- LOGO -->
+      <a href="index.html" class="flex items-center ml-4">
+        <img src="assets/imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto">
+      </a>
 
-    <!-- BOTÃO HAMBURGUER (visível no mobile) -->
-    <button id="menu-toggle" class="md:hidden text-red-400 hover:text-white focus:outline-none">
-      <i class="fas fa-bars text-2xl"></i>
-    </button>
+      <!-- BOTÃO HAMBURGUER (visível no mobile) -->
+      <button id="menu-toggle" class="md:hidden text-red-400 hover:text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
 
-    <!-- LINKS DE NAVEGAÇÃO -->
-    <div
-      id="menu"
-      class="hidden opacity-0 scale-95 transition-all duration-300 ease-in-out transform 
-            flex flex-col space-y-4 absolute right-1 top-16 w-30 bg-black bg-opacity-80 rounded-lg px-4 py-4 z-50
-            md:flex md:flex-row md:space-y-0 md:space-x-6 md:static md:w-auto md:bg-transparent md:opacity-100 md:scale-100 md:rounded-none backdrop-blur-sm backdrop-brightness-50">
-      <a onclick="scrollToTop()" class="cursor-pointer text-red-400 hover:text-white font-semibold transition">Home</a>
-      <a href="galeria.html" class="text-red-400 hover:text-white font-semibold transition">Photo Gallery</a>
-      <a href="tour.html" class="text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
-      <a href="contato.html" class="text-red-400 hover:text-white font-semibold transition">Contact</a>
-      <a href="page_not_found.html" class="text-red-400 hover:text-white font-semibold transition">All My Links</a>
+      <!-- LINKS DE NAVEGAÇÃO -->
+      <div
+        id="menu"
+        class="hidden opacity-0 scale-95 transition-all duration-300 ease-in-out transform 
+              flex flex-col space-y-4 absolute right-1 top-16 w-30 bg-black bg-opacity-80 rounded-lg px-4 py-4 z-50
+              md:flex md:flex-row md:space-y-0 md:space-x-6 md:static md:w-auto md:bg-transparent md:opacity-100 md:scale-100 md:rounded-none backdrop-blur-sm backdrop-brightness-50">
+        <a onclick="scrollToTop()" class="cursor-pointer text-red-400 hover:text-white font-semibold transition">Home</a>
+        <a href="galeria.html" class="text-red-400 hover:text-white font-semibold transition">Photo Gallery</a>
+        <a href="tour.html" class="text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
+        <a href="contato.html" class="text-red-400 hover:text-white font-semibold transition">Contact</a>
+        <a href="allmylinks.html" class="text-red-400 hover:text-white font-semibold transition">All My Links</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- Header com logo e descrição -->
-<header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center bg-parallax" style="background-image: url('assets/imagens/bg_up.jpg');">
-  <!-- LOGO DA BANDA COM ANIMAÇÃO -->
-  <img src="assets/imagens/hellforge_logo_2021.png"
-       alt="Logo da Banda"
-       class="mx-auto w-[600px] mb-4 logo-animada">
+  <!-- Header com logo e descrição -->
+  <header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center bg-parallax" style="background-image: url('assets/imagens/bg_up.jpg');">
+    <!-- LOGO DA BANDA COM ANIMAÇÃO -->
+    <img src="assets/imagens/hellforge_logo_2021.png"
+        alt="Logo da Banda"
+        class="mx-auto w-[600px] mb-4 logo-animada">
 
-  <!-- DESCRIÇÃO -->
-  <div class="max-w-5xl mx-auto text-lg leading-relaxed px-6 text-justify space-y-6 text-soft-shadow">
-    <p><strong>Hellforge</strong>: Forged in the Fire of True Power Metal</p>
+    <!-- DESCRIÇÃO -->
+    <div class="max-w-5xl mx-auto text-lg leading-relaxed px-6 text-justify space-y-6 text-soft-shadow">
+      <p><strong>Hellforge</strong>: Forged in the Fire of True Power Metal</p>
 
-    <p>Hellforge was born in June 2010 in Salvador, Brazil, founded by musicians Thiago Torres and Felipe Casais after the breakup of their previous band, Dryad. Joined by the skilled singer Rafael Carvalho, the band began to take its first steps into the local underground metal scene with determination and passion.</p>
+      <p>Hellforge was born in June 2010 in Salvador, Brazil, founded by musicians Thiago Torres and Felipe Casais after the breakup of their previous band, Dryad. Joined by the skilled singer Rafael Carvalho, the band began to take its first steps into the local underground metal scene with determination and passion.</p>
 
-    <p>From its inception, Hellforge set out with a clear mission: to deliver powerful, technical, and intense Power Metal, honoring the classic roots of the genre while infusing it with a modern edge. Their biggest musical influences include legendary bands such as Angra, Blind Guardian, and Iced Earth, whose spirit resonates throughout Hellforge's sound and performance.</p>
+      <p>From its inception, Hellforge set out with a clear mission: to deliver powerful, technical, and intense Power Metal, honoring the classic roots of the genre while infusing it with a modern edge. Their biggest musical influences include legendary bands such as Angra, Blind Guardian, and Iced Earth, whose spirit resonates throughout Hellforge's sound and performance.</p>
 
-    <p>After a period away from the spotlight, the band is now preparing for a bold return, bringing a refreshed lineup and a more mature and impactful sound. The addition of Danilo Brandão (keyboards) and Luan (drums) has brought new energy and creativity to the project, further expanding the band’s musical capabilities and stage presence.</p>
+      <p>After a period away from the spotlight, the band is now preparing for a bold return, bringing a refreshed lineup and a more mature and impactful sound. The addition of Danilo Brandão (keyboards) and Luan (drums) has brought new energy and creativity to the project, further expanding the band’s musical capabilities and stage presence.</p>
 
-    <p>Hellforged's current setlist is packed with exclusive and powerful original songs, showcasing the best of Power Metal through epic melodies, heavy riffs, and emotionally charged lyrics. Each track is carefully crafted to transport the listener through mythical worlds and intense soundscapes — a true journey through sound and steel.</p>
+      <p>Hellforged's current setlist is packed with exclusive and powerful original songs, showcasing the best of Power Metal through epic melodies, heavy riffs, and emotionally charged lyrics. Each track is carefully crafted to transport the listener through mythical worlds and intense soundscapes — a true journey through sound and steel.</p>
 
-    <p>Rising as a response to the lack of Power Metal representation in the Bahia metal scene, Hellforged stands tall as one of the few bands in the region truly embracing and championing the genre. With strength, precision, and relentless passion, they are ready to reignite the flame and conquer stages wherever their music takes them.</p>
+      <p>Rising as a response to the lack of Power Metal representation in the Bahia metal scene, Hellforged stands tall as one of the few bands in the region truly embracing and championing the genre. With strength, precision, and relentless passion, they are ready to reignite the flame and conquer stages wherever their music takes them.</p>
 
-    <p>Hellforge is more than a band — it is a statement of pure devotion to heavy metal. A blazing force returning to deliver everything Power Metal fans crave: heaviness, melody, and epic spirit.</p>
-  </div>
-</header>
+      <p>Hellforge is more than a band — it is a statement of pure devotion to heavy metal. A blazing force returning to deliver everything Power Metal fans crave: heaviness, melody, and epic spirit.</p>
+    </div>
+  </header>
 
-<!-- Galeria de imagens -->
-<section class="flex flex-wrap justify-center gap-4 p-10 bg-black bg-opacity-90">
-  <img src="assets/imagens/raf.jpg" alt="Foto 1" class="w-72 border-4 border-red-600 galeria-hover">
-  <img src="assets/imagens/fel.jpg" alt="Foto 2" class="w-72 border-4 border-red-600 galeria-hover">
-  <img src="assets/imagens/thi.jpg" alt="Foto 3" class="w-72 border-4 border-red-600 galeria-hover">
-</section>
+  <!-- Galeria de imagens -->
+  <section class="flex flex-wrap justify-center gap-4 p-10 bg-black bg-opacity-90">
+    <img src="assets/imagens/raf.jpg" alt="Foto 1" class="w-72 border-4 border-red-600 galeria-hover">
+    <img src="assets/imagens/fel.jpg" alt="Foto 2" class="w-72 border-4 border-red-600 galeria-hover">
+    <img src="assets/imagens/thi.jpg" alt="Foto 3" class="w-72 border-4 border-red-600 galeria-hover">
+  </section>
 
-<!-- Seção do clipe -->
-<section class="text-center py-10 bg-red-800 bg-opacity-90 bg-cover bg-center" style="background-image: url('assets/imagens/bg_down.jpg');">
-  <h2 class="text-2xl font-bold mb-4">Check out our music video</h2>
-  <div class="w-full max-w-xl mx-auto" style="aspect-ratio: 16 / 9;">
-    <iframe
-      src="https://www.youtube.com/watch?v=PsKkHWNkp3c" class="w-full h-full galeria-hover" allowfullscreen>
-    </iframe>
-  </div>
-</section>
+  <!-- Seção do clipe -->
+  <section class="text-center py-10 bg-red-800 bg-opacity-90 bg-cover bg-center" style="background-image: url('assets/imagens/bg_down.jpg');">
+    <h2 class="text-2xl font-bold mb-4">Check out our music video</h2>
+    <div class="w-full max-w-xl mx-auto" style="aspect-ratio: 16 / 9;">
+      <iframe
+        src="https://www.youtube.com/watch?v=PsKkHWNkp3c" class="w-full h-full galeria-hover" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
-<!-- Footer com redes sociais -->
-<footer class="text-center py-6 bg-black bg-opacity-95">
-  <h3 class="text-xl font-semibold mb-4">Follow us</h3>
-  <div class="flex flex-wrap justify-center gap-4">
-    <a href="https://www.instagram.com/hellforgeband/" target="_blank" class="flex items-center gap-2 text-red-400 hover:text-white">
-      <i class="fab fa-instagram text-3xl"></i> Instagram
-    </a>
-  </div>
-  
-  <!-- Créditos e direitos -->
-  <p class="text-sm text-gray-400 mt-4">
-    Hellforged - Official Website - All Rights Reserved © 2010-2026<br>
-    Website by 
-    <a href="https://www.instagram.com/thiagotorresferrao/" target="_blank" class="text-red-400 hover:text-white">
-      Thiago Torres
-    </a>
-  </p>
-</footer>
+  <!-- Footer com redes sociais -->
+  <footer class="text-center py-6 bg-black bg-opacity-95">
+    <h3 class="text-xl font-semibold mb-4">Follow us</h3>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://www.instagram.com/hellforgeband/" target="_blank" class="flex items-center gap-2 text-red-400 hover:text-white">
+        <i class="fab fa-instagram text-3xl"></i> Instagram
+      </a>
+    </div>
+    
+    <!-- Créditos e direitos -->
+    <p class="text-sm text-gray-400 mt-4">
+      Hellforged - Official Website - All Rights Reserved © 2010-2026<br>
+      Website by 
+      <a href="https://www.instagram.com/thiagotorresferrao/" target="_blank" class="text-red-400 hover:text-white">
+        Thiago Torres
+      </a>
+    </p>
+  </footer>
 
-<script src="assets/scripts/script.js"></script>
+  <script src="assets/scripts/script.js"></script>
 </body>
 </html>
 
