@@ -5,15 +5,12 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 a {
   transition: color 0.3s;
 }
-
 a:hover {
   color: #ffffff;
 }
@@ -47,12 +44,10 @@ h2, h3 {
   box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .galeria img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
 }
-
 .galeria-hover {
   transition:
     box-shadow 0.3s ease,
@@ -127,9 +122,7 @@ iframe {
 
 .link-hover:hover {
     color: white;
-
     transform: scale(1.2);
-
     filter: drop-shadow(0 0 6px red);
 }
 
@@ -185,15 +178,12 @@ iframe {
 .animate-fade-in-up {
   animation: fadeInUp 1.2s ease-out forwards;
 }
-
 .animate-glow {
   animation: logoGlow 2s ease-in-out infinite;
 }
-
 .animate-fade-zoom {
   animation: fadeZoom 1.5s ease-out forwards;
 }
-
 /* Oculta o loading se já tiver sido exibido uma vez */
 .skip-loading #loading-screen {
   display: none !important;
@@ -211,31 +201,26 @@ iframe {
   text-align: center;
   gap: 1.5rem;
 }
-
 .qr__wrapper {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .qr__code {
   width: 180px;
   height: 180px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
-
 .qr__code:hover {
   transform: scale(1.05);
 }
-
 .qr__text {
   margin-top: 0.8rem;
   font-size: 1rem;
   color: var(--text-color);
 }
-
 .whatsapp__button {
   display: inline-flex;
   align-items: center;
@@ -247,12 +232,10 @@ iframe {
   font-weight: 600;
   transition: background 0.3s ease, transform 0.2s ease;
 }
-
 .whatsapp__button:hover {
   background-color: #7a1919;
   transform: translateY(-2px);
 }
-
 #contact {
   text-align: center;
   display: flex;
@@ -298,7 +281,6 @@ iframe {
 .galeria-reveal {
     opacity: 0;
     transform: translateY(120px) scale(0.9);
-
     transition:
         opacity 2s ease-out,
         transform 2s ease-out;
@@ -316,7 +298,6 @@ iframe {
 .tour-reveal {
     opacity: 0;
     transform: translateY(100px);
-
     transition:
         opacity 2s ease-out,
         transform 2s ease-out;
@@ -330,7 +311,6 @@ iframe {
 .tour-item {
     opacity: 0;
     transform: translateX(-40px);
-
     transition:
         opacity 1s ease-out,
         transform 1s ease-out;
@@ -344,7 +324,6 @@ iframe {
 .tour-button {
     opacity: 0;
     transform: scale(0.8);
-
     transition:
         opacity 1.5s ease-out,
         transform 1.5s ease-out;
@@ -362,7 +341,6 @@ iframe {
 .links-reveal {
     opacity: 0;
     transform: translateY(80px);
-
     transition:
         opacity 2s ease-out,
         transform 2s ease-out;
@@ -376,7 +354,6 @@ iframe {
 .links-item {
     opacity: 0;
     transform: translateX(-40px);
-
     transition:
         opacity 1s ease-out,
         transform 1s ease-out;
@@ -394,7 +371,6 @@ iframe {
 .qr__wrapper {
     opacity: 0;
     transform: translateY(80px);
-
     transition:
         opacity 2s ease-out,
         transform 2s ease-out;
@@ -404,11 +380,9 @@ iframe {
     opacity: 1;
     transform: translateY(0);
 }
-
 .whatsapp__button {
     opacity: 0;
     transform: scale(0.8);
-
     transition:
         opacity 1.5s ease-out,
         transform 1.5s ease-out;
