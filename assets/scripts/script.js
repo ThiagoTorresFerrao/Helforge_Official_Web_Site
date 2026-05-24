@@ -186,3 +186,42 @@ document.addEventListener("DOMContentLoaded", () => {
     linksObserver.observe(linksSection);
 
 });
+
+// =========================
+// CONTACT PAGE REVEAL
+// =========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const qrWrapper = document.querySelector('.qr__wrapper');
+    const whatsappButton = document.querySelector('.whatsapp__button');
+
+    if (!qrWrapper) return;
+
+    const contactObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                qrWrapper.classList.add('active');
+
+                setTimeout(() => {
+
+                    if (whatsappButton) {
+                        whatsappButton.classList.add('active');
+                    }
+
+                }, 700);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    contactObserver.observe(qrWrapper);
+
+});
