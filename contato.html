@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body class="bg-black text-white bg-cover bg-center" style="background-image: url('assets/imagens/bg_up.jpg');">
+<body class="bg-black text-white bg-cover bg-center min-h-screen flex flex-col" style="background-image: url('assets/imagens/bg_up.jpg');">
 
   <!-- NAVBAR -->
   <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
@@ -41,26 +41,29 @@
     </div>
   </nav>
 
-  <!-- CABEÇALHO -->
-  <header class="text-center pt-28 pb-10 bg-black bg-opacity-80 bg-parallax">
-    <h1 class="text-4xl font-bold text-red-500 mb-4">Contact Us</h1>
-    <p class="text-lg text-soft-shadow">Get in touch with Hellforged</p>
-  </header>
+  <main class="flex-grow">
 
-  <!-- CONTATE-ME WHATS APP LINK E QR CODE -->
-    <section class="contact section" id="contact">
-      <div class="contact__container container grid whatsapp-contact">
-        <div class="qr__wrapper">
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/5535997629116" alt="QR Code WhatsApp" class="qr__code"/>
-            <p class="qr__text">
-              Scan the QR Code to call me on WhatsApp 📱
-            </p>
+    <!-- CABEÇALHO -->
+    <header class="text-center pt-28 pb-10 bg-black bg-opacity-80 bg-parallax">
+      <h1 class="text-4xl font-bold text-red-500 mb-4">Contact Us</h1>
+      <p class="text-lg text-soft-shadow">Get in touch with Hellforged</p>
+    </header>
+
+    <!-- CONTATE-ME WHATS APP LINK E QR CODE -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid whatsapp-contact">
+          <div class="qr__wrapper">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/5535997629116" alt="QR Code WhatsApp" class="qr__code"/>
+              <p class="qr__text">
+                Scan the QR Code to call me on WhatsApp 📱
+              </p>
+            </div>
+              <a href="https://wa.me/5535997629116?text=Hello%2C%20I%20would%20like%20to%20talk%20about%20the%20Hellforge%21" target="_blank" rel="noopener noreferrer" class="button contact__button whatsapp__button">
+                💬 Contact me
+              </a>
           </div>
-            <a href="https://wa.me/5535997629116?text=Hello%2C%20I%20would%20like%20to%20talk%20about%20the%20Hellforge%21" target="_blank" rel="noopener noreferrer" class="button contact__button whatsapp__button">
-              💬 Contact me
-            </a>
-        </div>
-      </section>
+        </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="text-center py-6 bg-black bg-opacity-95 mt-12">
