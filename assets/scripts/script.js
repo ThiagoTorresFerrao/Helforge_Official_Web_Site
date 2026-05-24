@@ -72,5 +72,30 @@ window.addEventListener("load", () => {
   }
 });
 
+// =========================
+// GALLERY SCROLL REVEAL
+// =========================
 
+const galleryItems = document.querySelectorAll('.galeria-reveal');
 
+const galleryObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry, index) => {
+
+        if (entry.isIntersecting) {
+
+            setTimeout(() => {
+                entry.target.classList.add('active');
+            }, index * 250);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+galleryItems.forEach(item => {
+    galleryObserver.observe(item);
+});
