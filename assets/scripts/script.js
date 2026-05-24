@@ -147,3 +147,42 @@ document.addEventListener("DOMContentLoaded", () => {
     tourObserver.observe(tourSection);
 
 });
+
+// =========================
+// ALL MY LINKS REVEAL
+// =========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const linksSection = document.querySelector('.links-reveal');
+    const linksItems = document.querySelectorAll('.links-item');
+
+    if (!linksSection) return;
+
+    const linksObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                linksSection.classList.add('active');
+
+                linksItems.forEach((item, index) => {
+
+                    setTimeout(() => {
+                        item.classList.add('active');
+                    }, index * 600);
+
+                });
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    linksObserver.observe(linksSection);
+
+});
