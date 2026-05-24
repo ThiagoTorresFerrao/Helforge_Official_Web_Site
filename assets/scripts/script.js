@@ -99,3 +99,51 @@ const galleryObserver = new IntersectionObserver((entries) => {
 galleryItems.forEach(item => {
     galleryObserver.observe(item);
 });
+
+// =========================
+// TOUR PAGE REVEAL
+// =========================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const tourSection = document.querySelector('.tour-reveal');
+    const tourItems = document.querySelectorAll('.tour-item');
+    const tourButton = document.querySelector('.tour-button');
+
+    if (!tourSection) return;
+
+    const tourObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                tourSection.classList.add('active');
+
+                tourItems.forEach((item, index) => {
+
+                    setTimeout(() => {
+                        item.classList.add('active');
+                    }, index * 800);
+
+                });
+
+                setTimeout(() => {
+
+                    if (tourButton) {
+                        tourButton.classList.add('active');
+                    }
+
+                }, 1800);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    tourObserver.observe(tourSection);
+
+});

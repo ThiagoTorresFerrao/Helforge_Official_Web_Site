@@ -308,3 +308,49 @@ iframe {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
+
+/* =========================
+   TOUR PAGE ANIMATIONS
+========================= */
+
+.tour-reveal {
+    opacity: 0;
+    transform: translateY(100px);
+
+    transition:
+        opacity 2s ease-out,
+        transform 2s ease-out;
+}
+
+.tour-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tour-item {
+    opacity: 0;
+    transform: translateX(-40px);
+
+    transition:
+        opacity 1s ease-out,
+        transform 1s ease-out;
+}
+
+.tour-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tour-button {
+    opacity: 0;
+    transform: scale(0.8);
+
+    transition:
+        opacity 1.5s ease-out,
+        transform 1.5s ease-out;
+}
+
+.tour-button.active {
+    opacity: 1;
+    transform: scale(1);
+}
