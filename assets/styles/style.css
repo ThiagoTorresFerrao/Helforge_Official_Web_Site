@@ -250,3 +250,37 @@ nav a:hover::after {
   align-items: center;
   justify-content: center;
 }
+
+/* =========================
+   LINK HOVER EFFECT DO ALL MY LINKS
+========================= */
+
+.link-hover {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.link-hover:hover {
+    color: white;
+    transform: scale(1.1);
+    transform-origin: left;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000;
+    animation: redPulse 1s infinite alternate;
+}
+
+@keyframes redPulse {
+    from {
+        text-shadow:
+            0 0 5px #550000,
+            0 0 10px #550000;
+    }
+    to {
+        text-shadow:
+            0 0 10px #ff0000,
+            0 0 20px #ff0000,
+            0 0 35px #ff0000;
+    }
+}
