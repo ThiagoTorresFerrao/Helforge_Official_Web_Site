@@ -17,6 +17,7 @@ HELLFORGE_OFFICIAL_WEB_SITE
 │   ├── scripts
 │   └── styles
 │
+├── allmylinks.html
 ├── contato.html
 ├── galeria.html
 ├── index.html
