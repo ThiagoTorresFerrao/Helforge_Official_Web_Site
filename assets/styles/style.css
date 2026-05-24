@@ -112,29 +112,36 @@ iframe {
   background-position: center;
 }
 
-/* ------------------------------ */
-/*        NAVBAR ENHANCEMENTS     */
-/* ------------------------------ */
+/* =========================
+   LINK HOVER EFFECT DO ALL MY LINKS
+========================= */
 
-nav a {
-  position: relative;
-  overflow: hidden;
+.link-hover {
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    overflow: visible;
 }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  width: 0%;
-  height: 2px;
-  background-color: #ff4444;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
+.link-hover:hover {
+    color: white;
+
+    transform: scale(1.2);
+
+    filter: drop-shadow(0 0 6px red);
 }
 
-nav a:hover::after {
-  width: 100%;
+@keyframes redPulse {
+    from {
+        text-shadow:
+            0 0 5px #550000,
+            0 0 10px #550000;
+    }
+    to {
+        text-shadow:
+            0 0 10px #ff0000,
+            0 0 20px #ff0000,
+            0 0 35px #ff0000;
+    }
 }
 
 /* ------------------------------ */
@@ -249,38 +256,4 @@ nav a:hover::after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* =========================
-   LINK HOVER EFFECT DO ALL MY LINKS
-========================= */
-
-.link-hover {
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.link-hover:hover {
-    color: white;
-    transform: scale(1.1);
-    transform-origin: left;
-    text-shadow:
-        0 0 5px #ff0000,
-        0 0 10px #ff0000,
-        0 0 20px #ff0000;
-    animation: redPulse 1s infinite alternate;
-}
-
-@keyframes redPulse {
-    from {
-        text-shadow:
-            0 0 5px #550000,
-            0 0 10px #550000;
-    }
-    to {
-        text-shadow:
-            0 0 10px #ff0000,
-            0 0 20px #ff0000,
-            0 0 35px #ff0000;
-    }
 }
