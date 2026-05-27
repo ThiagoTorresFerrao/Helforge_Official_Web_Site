@@ -1,173 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hellforge Official Web Site</title>
-    <link rel="icon" href="assets/imagens/favicon.ico" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hellforge Official Web Site</title>
+        <link rel="icon" href="assets/imagens/favicon.ico" type="image/x-icon" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    </head>
 
-<body class="bg-black text-white bg-cover bg-center min-h-screen flex flex-col"
-      style="background-image: url('assets/imagens/bg_up.jpg');">
+    <body class="bg-black text-white bg-cover bg-center min-h-screen flex flex-col"
+        style="background-image: url('assets/imagens/bg_up.jpg');">
 
-    <!-- NAVBAR FIXA -->
-    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
-        <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <!-- NAVBAR FIXA -->
+        <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
+            <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
 
-            <!-- LOGO -->
-            <a href="index.html" class="flex items-center ml-4">
-                <img src="assets/imagens/hellforge_logo_2021.png"
-                     alt="Logo Hellforged"
-                     class="h-10 w-auto">
-            </a>
+                <!-- LOGO -->
+                <a href="index.html" class="flex items-center ml-4">
+                    <img src="assets/imagens/hellforge_logo_2021.png"
+                        alt="Logo Hellforged"
+                        class="h-10 w-auto">
+                </a>
 
-            <!-- BOTÃO HAMBURGUER -->
-            <button id="menu-toggle"
-                    class="md:hidden text-red-400 hover:text-white focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
+                <!-- BOTÃO HAMBURGUER -->
+                <button id="menu-toggle"
+                        class="md:hidden text-red-400 hover:text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
 
-            </button>
+                </button>
 
-            <!-- LINKS DE NAVEGAÇÃO -->
-            <div id="menu" class="overflow-visible hidden opacity-0 scale-95 transition-all duration-300 ease-in-out transform flex flex-col space-y-4 absolute right-1 top-16 w-30 bg-black  bg-opacity-80 rounded-lg px-4 py-4 z-50 md:flex md:flex-row md:space-y-0 md:space-x-6 md:static md:w-auto md:bg-transparent md:opacity-100 md:scale-100 md:rounded-none backdrop-blur-sm backdrop-brightness-50">
+                <!-- LINKS DE NAVEGAÇÃO -->
+                <div id="menu" class="overflow-visible hidden opacity-0 scale-95 transition-all duration-300 ease-in-out transform flex flex-col space-y-4 absolute right-1 top-16 w-30 bg-black  bg-opacity-80 rounded-lg px-4 py-4 z-50 md:flex md:flex-row md:space-y-0 md:space-x-6 md:static md:w-auto md:bg-transparent md:opacity-100 md:scale-100 md:rounded-none backdrop-blur-sm backdrop-brightness-50">
 
-                <a onclick="scrollToTop()" href="index.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Home</a>
-                <a href="galeria.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Photo Gallery</a>
-                <a href="tour.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
-                <a href="contato.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Contact</a>
-                <a href="allmylinks.html" class="link-hover text-red-400 hover:text-white font-semibold transition">All My Links</a>
+                    <a onclick="scrollToTop()" href="index.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Home</a>
+                    <a href="galeria.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Photo Gallery</a>
+                    <a href="tour.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
+                    <a href="contato.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Contact</a>
+                    <a href="allmylinks.html" class="link-hover text-red-400 hover:text-white font-semibold transition">All My Links</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="flex-grow">
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="flex-grow">
 
-        <!-- HEADER -->
-        <header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center bg-parallax"
-                style="background-image: url('assets/imagens/bg_up.jpg');">
+            <!-- HEADER -->
+            <header class="text-center pt-28 pb-10 bg-red-900 bg-opacity-80 bg-cover bg-center bg-parallax"
+                    style="background-image: url('assets/imagens/bg_up.jpg');">
 
-                 <!-- CAIXA DE LINKS -->
-            <div class="links-reveal max-w-2xl mx-auto mt-10 bg-black bg-opacity-70 backdrop-blur-sm 
-                        border border-red-900 rounded-2xl shadow-2xl p-8">
-                <h2 class="text-3xl font-bold text-red-500 mb-8 tracking-widest">
-                    ALL MY LINKS
-                </h2>
+                    <!-- CAIXA DE LINKS -->
+                <div class="links-reveal max-w-2xl mx-auto mt-10 bg-black bg-opacity-70 backdrop-blur-sm 
+                            border border-red-900 rounded-2xl shadow-2xl p-8">
+                    <h2 class="text-3xl font-bold text-red-500 mb-8 tracking-widest">
+                        ALL MY LINKS
+                    </h2>
 
-                <div class="space-y-6 text-left">
+                    <div class="space-y-6 text-left">
 
-                    <!-- HELLFORGE -->
-                    <div class="links-item border-b border-red-900 pb-4">
-                        <h3 class="text-xl font-semibold text-white mb-3">
-                            Hellforge
-                        </h3>
+                        <!-- HELLFORGE -->
+                        <div class="links-item border-b border-red-900 pb-4">
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Hellforge
+                            </h3>
 
-                        <a href="https://www.instagram.com/hellforgeband/"
-                        target="_blank"
-                        class="link-hover flex items-center gap-3 text-red-400">
-                            <i class="fab fa-instagram text-2xl"></i>
-                            <span>@hellforgeband</span>
-                        </a>
-                    </div>
-
-                    <!-- RAFAEL -->
-                    <div class="links-item border-b border-red-900 pb-4">
-                        <h3 class="text-xl font-semibold text-white mb-3">
-                            Rafael Carvalho
-                        </h3>
-                        <a href="https://www.instagram.com/rafaelcarvalhocfh/"
-                        target="_blank"
-                        class="link-hover flex items-center gap-3 text-red-400">
-                            <i class="fab fa-instagram text-2xl"></i>
-                            <span>@rafaelcarvalhocfh</span>
-                        </a>
-
-                    </div>
-
-                    <!-- FELIPE -->
-                    <div class="links-item border-b border-red-900 pb-4">
-                        <h3 class="text-xl font-semibold text-white mb-3">
-                            Felipe Casais
-                        </h3>
-                        <a href="https://www.instagram.com/felipegtr7/"
-                        target="_blank"
-                        class="link-hover flex items-center gap-3 text-red-400">
-                            <i class="fab fa-instagram text-2xl"></i>
-                            <span>@felipegtr7</span>
-                        </a>
-                    </div>
-
-                    <!-- LUA -->
-                    <div class="links-item border-b border-red-900 pb-4">
-                        <h3 class="text-xl font-semibold text-white mb-3">
-                            Luã Barros
-                        </h3>
-                        <a href="https://www.instagram.com/fariaz.89/"
-                        target="_blank"
-                        class="link-hover flex items-center gap-3 text-red-400">
-                            <i class="fab fa-instagram text-2xl"></i>
-                            <span>@fariaz.89</span>
-                        </a>
-                    </div>
-
-                    <!-- THIAGO -->
-                    <div class="links-item">
-                        <h3 class="text-xl font-semibold text-white mb-3">
-                            Thiago Torres
-                        </h3>
-                        <div class="inline-flex flex-col gap-4">
-                            <a href="https://www.instagram.com/thiagotorresferrao/"
+                            <a href="https://www.instagram.com/hellforgeband/"
                             target="_blank"
                             class="link-hover flex items-center gap-3 text-red-400">
                                 <i class="fab fa-instagram text-2xl"></i>
-                                <span>@thiagotorresferrao</span>
+                                <span>@hellforgeband</span>
                             </a>
-                            <a href="https://www.youtube.com/@Thiago_Torres"
+                        </div>
+
+                        <!-- RAFAEL -->
+                        <div class="links-item border-b border-red-900 pb-4">
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Rafael Carvalho
+                            </h3>
+                            <a href="https://www.instagram.com/rafaelcarvalhocfh/"
                             target="_blank"
                             class="link-hover flex items-center gap-3 text-red-400">
-                                <i class="fab fa-youtube text-2xl"></i>
-                                <span>@Thiago_Torres</span>
+                                <i class="fab fa-instagram text-2xl"></i>
+                                <span>@rafaelcarvalhocfh</span>
                             </a>
+
+                        </div>
+
+                        <!-- FELIPE -->
+                        <div class="links-item border-b border-red-900 pb-4">
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Felipe Casais
+                            </h3>
+                            <a href="https://www.instagram.com/felipegtr7/"
+                            target="_blank"
+                            class="link-hover flex items-center gap-3 text-red-400">
+                                <i class="fab fa-instagram text-2xl"></i>
+                                <span>@felipegtr7</span>
+                            </a>
+                        </div>
+
+                        <!-- LUA -->
+                        <div class="links-item border-b border-red-900 pb-4">
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Luã Barros
+                            </h3>
+                            <a href="https://www.instagram.com/fariaz.89/"
+                            target="_blank"
+                            class="link-hover flex items-center gap-3 text-red-400">
+                                <i class="fab fa-instagram text-2xl"></i>
+                                <span>@fariaz.89</span>
+                            </a>
+                        </div>
+
+                        <!-- THIAGO -->
+                        <div class="links-item">
+                            <h3 class="text-xl font-semibold text-white mb-3">
+                                Thiago Torres
+                            </h3>
+                            <div class="inline-flex flex-col gap-4">
+                                <a href="https://www.instagram.com/thiagotorresferrao/"
+                                target="_blank"
+                                class="link-hover flex items-center gap-3 text-red-400">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                    <span>@thiagotorresferrao</span>
+                                </a>
+                                <a href="https://www.youtube.com/@Thiago_Torres"
+                                target="_blank"
+                                class="link-hover flex items-center gap-3 text-red-400">
+                                    <i class="fab fa-youtube text-2xl"></i>
+                                    <span>@Thiago_Torres</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </header>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="text-center py-6 bg-black bg-opacity-95">
+            <h3 class="text-xl font-semibold mb-4">
+                Follow us
+            </h3>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.instagram.com/hellforgeband/"
+                target="_blank"
+                class="flex items-center gap-2 text-red-400 hover:text-white">
+                    <i class="fab fa-instagram text-3xl"></i>
+                    Instagram
+                </a>
             </div>
-        </header>
-    </main>
 
-    <!-- FOOTER -->
-    <footer class="text-center py-6 bg-black bg-opacity-95">
-        <h3 class="text-xl font-semibold mb-4">
-            Follow us
-        </h3>
+            <!-- CRÉDITOS -->
+            <p class="text-sm text-gray-400 mt-4">
+                Hellforged - Official Website - All Rights Reserved © 2010-2026
+                <br>
+                Website by
+                <a href="https://www.instagram.com/thiagotorresferrao/"
+                target="_blank"
+                class="text-red-400 hover:text-white">
+                    Thiago Torres
+                </a>
+            </p>
+        </footer>
 
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://www.instagram.com/hellforgeband/"
-               target="_blank"
-               class="flex items-center gap-2 text-red-400 hover:text-white">
-                <i class="fab fa-instagram text-3xl"></i>
-                Instagram
-            </a>
-        </div>
+        <script src="assets/scripts/script.js"></script>
 
-        <!-- CRÉDITOS -->
-        <p class="text-sm text-gray-400 mt-4">
-            Hellforged - Official Website - All Rights Reserved © 2010-2026
-            <br>
-            Website by
-            <a href="https://www.instagram.com/thiagotorresferrao/"
-               target="_blank"
-               class="text-red-400 hover:text-white">
-                Thiago Torres
-            </a>
-        </p>
-    </footer>
-
-    <script src="assets/scripts/script.js"></script>
-
-</body>
+    </body>
 </html>

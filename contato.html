@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - Hellforged</title>
-  <link rel="icon" href="assets/imagens/favicon.ico" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/styles/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Hellforged</title>
+    <link rel="icon" href="assets/imagens/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
 
-<body class="bg-black text-white bg-cover bg-center min-h-screen flex flex-col" style="background-image: url('assets/imagens/bg_up.jpg');">
+  <body class="bg-black text-white bg-cover bg-center min-h-screen flex flex-col" style="background-image: url('assets/imagens/bg_up.jpg');">
 
-  <!-- NAVBAR -->
-  <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
 
-      <!-- LOGO -->
-      <a href="index.html" class="flex items-center ml-4">
-        <img src="assets/imagens/imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto" />
-      </a>
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center ml-4">
+          <img src="assets/imagens/imagens/hellforge_logo_2021.png" alt="Logo Hellforged" class="h-10 w-auto" />
+        </a>
 
-      <!-- HAMBURGER -->
-      <button id="menu-toggle" class="md:hidden text-red-400 hover:text-white">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
+        <!-- HAMBURGER -->
+        <button id="menu-toggle" class="md:hidden text-red-400 hover:text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
 
-      <!-- LINKS DE NAVEGAÇÃO -->
-      <div
-        id="menu"
-        class="overflow-visible hidden opacity-0 scale-95 transition-all duration-300 ease-in-out transform 
-              flex flex-col space-y-4 absolute right-1 top-16 w-30 bg-black bg-opacity-80 rounded-lg px-4 py-4 z-50
-              md:flex md:flex-row md:space-y-0 md:space-x-6 md:static md:w-auto md:bg-transparent md:opacity-100 md:scale-100 md:rounded-none backdrop-blur-sm backdrop-brightness-50">
-              
-        <a onclick="scrollToTop()" href="index.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Home</a>
-        <a href="galeria.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Photo Gallery</a>
-        <a href="tour.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
-        <a href="contato.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Contact</a>
-        <a href="allmylinks.html" class="link-hover text-red-400 hover:text-white font-semibold transition">All My Links</a>
+        <!-- LINKS DE NAVEGAÇÃO -->
+        <div
+          id="menu"
+          class="overflow-visible hidden opacity-0 scale-95 transition-all duration-300 ease-in-out transform 
+                flex flex-col space-y-4 absolute right-1 top-16 w-30 bg-black bg-opacity-80 rounded-lg px-4 py-4 z-50
+                md:flex md:flex-row md:space-y-0 md:space-x-6 md:static md:w-auto md:bg-transparent md:opacity-100 md:scale-100 md:rounded-none backdrop-blur-sm backdrop-brightness-50">
+                
+          <a onclick="scrollToTop()" href="index.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Home</a>
+          <a href="galeria.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Photo Gallery</a>
+          <a href="tour.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Tour Dates</a>
+          <a href="contato.html" class="link-hover text-red-400 hover:text-white font-semibold transition">Contact</a>
+          <a href="allmylinks.html" class="link-hover text-red-400 hover:text-white font-semibold transition">All My Links</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <main class="flex-grow">
+    <main class="flex-grow">
 
-    <!-- CABEÇALHO -->
-    <header class="text-center pt-28 pb-10 bg-black bg-opacity-80 bg-parallax">
-      <h1 class="text-4xl font-bold text-red-500 mb-4">Contact Us</h1>
-      <p class="text-lg text-soft-shadow">Get in touch with Hellforged</p>
-    </header>
+      <!-- CABEÇALHO -->
+      <header class="text-center pt-28 pb-10 bg-black bg-opacity-80 bg-parallax">
+        <h1 class="text-4xl font-bold text-red-500 mb-4">Contact Us</h1>
+        <p class="text-lg text-soft-shadow">Get in touch with Hellforged</p>
+      </header>
 
-    <!-- CONTATE-ME WHATS APP LINK E QR CODE -->
-      <section class="contact section" id="contact">
-        <div class="contact__container container grid whatsapp-contact">
-          <div class="qr__wrapper">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/5535997629116" alt="QR Code WhatsApp" class="qr__code"/>
-              <p class="qr__text">
-                Scan the QR Code to call me on WhatsApp 📱
-              </p>
+      <!-- CONTATE-ME WHATS APP LINK E QR CODE -->
+        <section class="contact section" id="contact">
+          <div class="contact__container container grid whatsapp-contact">
+            <div class="qr__wrapper">
+              <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/5535997629116" alt="QR Code WhatsApp" class="qr__code"/>
+                <p class="qr__text">
+                  Scan the QR Code to call me on WhatsApp 📱
+                </p>
+              </div>
+                <a href="https://wa.me/5535997629116?text=Hello%2C%20I%20would%20like%20to%20talk%20about%20the%20Hellforge%21" target="_blank" rel="noopener noreferrer" class="button contact__button whatsapp__button">
+                  💬 Contact me
+                </a>
             </div>
-              <a href="https://wa.me/5535997629116?text=Hello%2C%20I%20would%20like%20to%20talk%20about%20the%20Hellforge%21" target="_blank" rel="noopener noreferrer" class="button contact__button whatsapp__button">
-                💬 Contact me
-              </a>
-          </div>
-        </section>
-  </main>
+          </section>
+    </main>
 
-  <!-- FOOTER -->
-  <footer class="text-center py-6 bg-black bg-opacity-95 mt-12">
-    <h3 class="text-xl font-semibold mb-4">Follow us</h3>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="https://www.instagram.com/hellforgeband/" target="_blank" class="flex items-center gap-2 text-red-400 hover:text-white">
-        <i class="fab fa-instagram text-3xl"></i> Instagram
-      </a>
-    </div>
-    <p class="text-sm text-gray-400 mt-4">
-      Hellforged - Official Website - All Rights Reserved © 2010-2026<br>
-      Website by 
-      <a href="https://www.instagram.com/thiagotorresferrao/" target="_blank" class="text-red-400 hover:text-white">Thiago Torres</a>
-    </p>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="text-center py-6 bg-black bg-opacity-95 mt-12">
+      <h3 class="text-xl font-semibold mb-4">Follow us</h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://www.instagram.com/hellforgeband/" target="_blank" class="flex items-center gap-2 text-red-400 hover:text-white">
+          <i class="fab fa-instagram text-3xl"></i> Instagram
+        </a>
+      </div>
+      <p class="text-sm text-gray-400 mt-4">
+        Hellforged - Official Website - All Rights Reserved © 2010-2026<br>
+        Website by 
+        <a href="https://www.instagram.com/thiagotorresferrao/" target="_blank" class="text-red-400 hover:text-white">Thiago Torres</a>
+      </p>
+    </footer>
 
-  <script src="assets/scripts/script.js"></script>
-</body>
+    <script src="assets/scripts/script.js"></script>
+  </body>
 </html>
 
