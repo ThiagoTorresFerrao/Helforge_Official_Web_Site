@@ -117,7 +117,6 @@ Apesar de fazer parte do meu portfólio, o projeto foi pensado seguindo padrões
 
 
 
-
 # 🌐 Social Media
 
 [![Instagram](https://img.shields.io/badge/Instagram-hellforgeband-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hellforgeband/)
